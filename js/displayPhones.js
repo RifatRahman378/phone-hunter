@@ -27,5 +27,7 @@ const displayPhones = phones => {
         </div>
         `;
         phoneContainer.appendChild(phoneCard);
+
     });
+    loading(false);
 };

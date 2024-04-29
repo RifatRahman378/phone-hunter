@@ -13,15 +13,16 @@
     <section>
 
         <div class="text-center mt-4">
-            <input id="search-field" type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
-        <button onclick="handleSearch()" class="btn">Search</button>
+            <input id="search-field" type="text" placeholder="Search here"
+                class="input input-bordered w-full max-w-xs" />
+            <button onclick="handleSearch()" class="btn">Search</button>
         </div>
     </section>
     <section>
-        <div class="h-screen flex justify-center items-center hidden">
+        <div id="loading-screen" class="h-screen flex justify-center items-center hidden">
             <span class="loading loading-infinity loading-lg "></span>
         </div>
-        <div id="card-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div id="card-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto">
 
         </div>
     </section>
