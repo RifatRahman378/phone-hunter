@@ -1,6 +1,13 @@
 const displayPhones = phones => {
     const phoneContainer = document.getElementById('card-container');
     phoneContainer.textContent = "";
+    const show = document.getElementById('showall-container')
+    if (phones.length > 12) {
+        show.classList.remove('hidden');
+    }
+    else {
+        show.classList.add('hidden')
+    }
     phones = phones.slice(0, 12);
     phones.forEach(phone => {
         console.log(phone);
