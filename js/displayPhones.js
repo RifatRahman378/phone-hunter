@@ -1,4 +1,4 @@
-const displayPhones = phones => {
+const displayPhones = (phones, isShowAll) => {
     const phoneContainer = document.getElementById('card-container');
     phoneContainer.textContent = "";
     const show = document.getElementById('showall-container')
@@ -8,9 +8,10 @@ const displayPhones = phones => {
     else {
         show.classList.add('hidden')
     }
-    phones = phones.slice(0, 12);
+    if (!isShowAll) {
+        phones = phones.slice(0, 12);
+    }
     phones.forEach(phone => {
-        console.log(phone);
         const phoneCard = document.createElement('div');
         phoneCard.innerHTML = `
         <div class="card w-96 bg-base-100 shadow-xl">
@@ -21,7 +22,7 @@ const displayPhones = phones => {
         <h2 class="card-title">${phone.phone_name}</h2>
         <p>If a dog chews shoes whose shoes does he choose?</p>
         <div class="card-actions">
-        <button class="btn btn-primary">Buy Now</button>
+        <button class="btn btn-primary">Show Details</button>
         </div>
         </div>
         </div>

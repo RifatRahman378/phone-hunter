@@ -22,13 +22,15 @@
         <div id="loading-screen" class="h-screen flex justify-center items-center hidden">
             <span class="loading loading-infinity loading-lg "></span>
         </div>
-        <div id="card-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto">
+        <div class="flex items-center">
+            <div id="card-container" class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 mx-auto ">
 
+            </div>
         </div>
     </section>
     <section>
-        <div id="showall-container" class="hidden">
-            <button class="btn">Show All</button>
+        <div id="showall-container" class="hidden text-center mt-10 mb-5">
+            <button onclick="showAll()" class="btn">Show All</button>
         </div>
     </section>
     <!-- script -->

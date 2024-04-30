@@ -1,8 +1,7 @@
-const handleSearch = () => {
+const handleSearch = (isShowAll) => {
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
-    console.log(searchText);
-    dataLoad(searchText);
+    dataLoad(searchText, isShowAll);
     loading(true);
 };
 const loading = (isLoading) => {
@@ -14,4 +13,8 @@ const loading = (isLoading) => {
     else {
         spinner.classList.add('hidden')
     }
+}
+
+const showAll = () =>{
+    handleSearch(true)
 }
