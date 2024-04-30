@@ -5,4 +5,4 @@ const dataLoad = async (searchText, isShowAll) => {
     displayPhones(phones, isShowAll);
 }
 
-dataLoad()
+dataLoad();

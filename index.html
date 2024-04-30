@@ -23,7 +23,8 @@
             <span class="loading loading-infinity loading-lg "></span>
         </div>
         <div class="flex items-center">
-            <div id="card-container" class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 mx-auto ">
+            <div id="card-container"
+                class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 mx-auto ">
 
             </div>
         </div>
@@ -33,10 +34,32 @@
             <button onclick="showAll()" class="btn">Show All</button>
         </div>
     </section>
+    <section>
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="show_details_modal" class="modal">
+            <div class="modal-box" id="modal-box">
+
+                <!-- <h3 id="" class="font-bold text-lg">phone name</h3>
+                <h3 id="" class="font-bold text-lg">storage</h3>
+                <h3 id="" class="font-bold text-lg">display size</h3>
+                <h3 id="" class="font-bold text-lg">chipset</h3>
+                <h3 id="" class="font-bold text-lg">memory</h3>
+                <h3 id="" class="font-bold text-lg">slug</h3>
+                <h3 id="" class="font-bold text-lg">Realease Date</h3>
+                <h3 id="" class="font-bold text-lg">Brand</h3>
+                <h3 id="" class="font-bold text-lg">GPS</h3> -->
+                <p class="py-4">Press ESC key or click outside to close</p>
+            </div>
+            <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+            </form>
+        </dialog>
+    </section>
     <!-- script -->
     <script src="js/phone.js"></script>
     <script src="js/handleSearch.js"></script>
     <script src="js/displayPhones.js"></script>
+    <script src="js/showDetails.js"></script>
 </body>
 
 </html>

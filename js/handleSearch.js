@@ -14,7 +14,6 @@ const loading = (isLoading) => {
         spinner.classList.add('hidden')
     }
 }
-
-const showAll = () =>{
+const showAll = () => {
     handleSearch(true)
 }
